@@ -161,18 +161,67 @@ body {
 
 .resume-content {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.resume-content > section > header {
+.resume-content > section:first-child {
+  width: 453px;
+}
+
+.resume-content > section:last-child {
+  width: 213px;
+}
+
+.resume-content > section > article > header {
   font-weight: bold;
   line-height: 17px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.resume-content > section > article {
+.resume-content > section > article > article {
   line-height: 24px;
   font-size: 18px;
   color: #252525;
+}
+
+.resume-content > section > article > article > * {
+  margin-top: 16px;
+}
+
+
+.resume-content > section > article {
+  margin-bottom: 40px;
+}
+
+.education > header {
+  color: #a066f8;
+}
+
+.experience > header {
+  color: #32cd88;
+}
+
+.projects > header {
+  color: #fb746a;
+}
+
+.skills > header {
+  color: #ee5035;
+}
+
+.languages > header {
+  color: #38bef8;
+}
+
+.skills > article, .languages > article {
+  display: flex;
+  flex-direction: column;
+  height: 196px;
+  flex-wrap: wrap;
+}
+
+.skills > article > span, .languages > article > span {
+  margin-top: 8px;
 }
