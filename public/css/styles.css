@@ -106,6 +106,8 @@ body {
   border-radius: 5px;
   /* В макете ширина 900 включает паддинг, поэтому тут надо вычесть */
   width: 830px;
+  /* Не работает */
+  /* box-sizing: border-box; */
   min-height: 1200px;
   margin: auto;
   z-index: 2;
@@ -135,7 +137,7 @@ body {
   padding-left: 24px;
 }
 
-.resume-header_person > *:first-child {
+.resume-header__person > *:first-child {
   font-size: 28px;
   color: #252525;
 }
@@ -166,11 +168,12 @@ body {
 }
 
 .resume-content > section:first-child {
-  width: 453px;
+  flex: 2;
+  margin-right: 94px;
 }
 
 .resume-content > section:last-child {
-  width: 213px;
+  flex: 1;
 }
 
 .resume-content > section > article > header {
@@ -189,7 +192,6 @@ body {
 .resume-content > section > article > article > * {
   margin-top: 16px;
 }
-
 
 .resume-content > section > article {
   margin-bottom: 40px;
@@ -224,4 +226,5 @@ body {
 
 .skills > article > span, .languages > article > span {
   margin-top: 8px;
+
 }
