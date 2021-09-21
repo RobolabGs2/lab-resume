@@ -110,16 +110,17 @@ body {
   border: 1px solid #d7d7d7;
   border-radius: 5px;
   /* В макете ширина 900 включает паддинг, поэтому тут надо вычесть */
-  width: 690px;
+  /* width: 690px; */
+  width: 760px;
   /* Не работает */
   /* box-sizing: border-box; */
-  min-height: 1060px;
+  min-height: 1061px;
   margin: auto;
   z-index: 2;
   padding: 70px;
 }
 
-.resume-page__section {
+.resume-page__section:not(:last-of-type) {
   padding-bottom: 40px;
 }
 
@@ -132,7 +133,7 @@ body {
 .social-buttons__button {
   width: 20px;
   height: 20px;
-  padding-left: 16px;
+  padding-left: 18px;
 }
 
 svg {
@@ -185,22 +186,24 @@ svg:hover {
   line-height: 40px;
   font-weight: 400;
   font-size: 32px;
-  padding-right: 90px;
+  padding-right: 20px;
+  margin-bottom: 8px;
+  word-spacing: 1px;
 }
 
 .resume-content {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .resume-content > section:first-child {
-  flex: 10;
-  margin-right: 40px;
+  width: 453px;
+  margin-right: 94px;
 }
 
 .resume-content > section:last-child {
-  flex: 4;
+  width: 213px;
 }
 
 .resume-section {
@@ -221,16 +224,33 @@ svg:hover {
   margin-top: 16px;
 }
 
+.resume-section__date_title_projects {
+  margin-top: 8px;
+}
+
+.resume-page__footer {
+  margin-top: 12px;
+}
+
 .marked-list {
-  margin-left: 16px;
+  word-spacing: 0.5px;
 }
 
 .marked-list > li::marker {
+  content: "";
+}
+
+.marked-list > li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.marked-list > li::before {
   content: "— ";
 }
 
 .resume-section__line_minor {
   color: #555;
+  line-height: 22px;
 }
 
 .resume-section__date {
@@ -262,10 +282,21 @@ svg:hover {
 .list-collumn {
   display: flex;
   flex-direction: column;
-  height: 196px;
+  height: 186px;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .list-collumn__item {
-  margin-top: 8px;
+  margin-right: 48px;
+  line-height: 30px;
+}
+
+.debug-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.debug-controls > section {
+  margin: 0px 32px;
 }
