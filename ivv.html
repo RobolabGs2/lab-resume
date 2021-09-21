@@ -1,0 +1,204 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Viacheslav Ivanchenko</title>
+  <meta name="description" content="My awesome resume">
+  <meta name="author" content="Viacheslav Ivanchenko">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script>
+    (function () {
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = window.document.querySelector('.actions__download-btn');
+        button.onclick = function () {
+          const source = window.document.querySelector('.resume-page');
+          html2pdf(source, {html2canvas: {scale: 2, width: "210mm", height: "297mm"}});
+        };
+      }, false);
+    })();
+  </script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="logo">
+        <a href="/" class="logo__text">CV Super Builder</a>
+      </div>
+      <div class="actions">
+        <button class="actions__download-btn">Download PDF</button>
+      </div>
+    </div>
+  </header>
+  <main class="resume-container">
+    <div class="resume-page">
+      <section class="resume-header resume-page__section">
+        <img src="images/profile.jpg" width="70" height="70" class="resume-header__avatar">
+        <section class="resume-header__person">
+          <div class="resume-header__name">Viacheslav Ivanchenko</div>
+          <div class="resume-header__position">software developer</div>
+        </section>
+        <section class="resume-header__contacts">
+          <div> slavikelk@yandex.ru </div>
+          <div> +7(952)606-64-24 </div>
+        </section>
+      </section>
+      <section class="resume-page__description resume-page__section">
+        To obtain a professional position in the consulting industry utilizing my relevant experience, technical
+        expertise, and problem solving skills.
+      </section>
+      <section class="resume-page__section">
+        <article class="resume-content">
+          <section>
+            <article class="resume-section">
+              <header class="resume-section__header resume-section__header_title_education">Education</header>
+              <section class="resume-section__line">
+                <strong>Bachelor of Science in Computer Science</strong>, South Federal University, Rostov-on-Don,
+                Russia
+              </section>
+              <section class="resume-section__line resume-section__line_minor">
+                <strong>Selected Coursework:</strong> Programming Language Theory, Non-classical Logic, Information
+                Security, Autodesk 3dsMax
+              </section>
+              <section class="resume-section__line resume-section__date">
+                Sep 2017 - July 2021
+              </section>
+              <section class="resume-section__line">
+                <strong>Master of Science in Computer Science</strong>, South Federal University, Rostov-on-Don,
+                Russia
+              </section>
+              <section class="resume-section__line resume-section__date"> Sep 2021 - July 2023 </section>
+            </article>
+            <article class="resume-section">
+              <header class="resume-section__header resume-section__header_title_experience">Employment History</header>
+              <section class="resume-section__line">
+                <strong>Junior software developer</strong> at <strong>Research Institute Specialized Security Computing
+                  Devices and Automation (SVA)</strong>
+              </section>
+              <ul class="resume-section__line resume-section__line_minor marked-list">
+                <li> Created mini-framework for typical microservices </li>
+                <li> Wrote CLI tool for managing CI/CD settings in monorepository </li>
+                <li> Worked with ██████ for █████████ in ████████████</li>
+              </ul>
+              <section class="resume-section__line resume-section__date"> Jan 2019 - Now </section>
+              <section class="resume-section__line">
+                <strong>Assistant</strong> at <strong>South Federal University</strong>
+              </section>
+              <ul class="resume-section__line resume-section__line_minor marked-list">
+                <li> Conduct practice on the course of Intelligent Systems </li>
+              </ul>
+              <section class="resume-section__line resume-section__date"> Sep 2021 - Now </section>
+            </article>
+          </section>
+          <section>
+            <article class="resume-section">
+              <header class="resume-section__header resume-section__header_title_skills">Skills</header>
+              <article class="list-collumn resume-section__line resume-section__line_minor">
+                <span class="list-collumn__item">Go</span>
+                <span class="list-collumn__item">Kotlin</span>
+                <span class="list-collumn__item">Spring</span>
+                <span class="list-collumn__item">Docker</span>
+                <span class="list-collumn__item">K8s</span>
+                <span class="list-collumn__item">Kafka</span>
+                <span class="list-collumn__item">Clickhouse</span>
+                <span class="list-collumn__item">Typescript</span>
+                <span class="list-collumn__item">HTML</span>
+                <span class="list-collumn__item">CSS</span>
+                <span class="list-collumn__item">Webpack</span>
+              </article>
+            </article>
+            <article class="resume-section">
+              <header class="resume-section__header resume-section__header_title_languages">Languages</header>
+              <article class="list-collumn resume-section__line resume-section__line_minor">
+                <span class="list-collumn__item">Russian</span>
+                <span class="list-collumn__item">English</span>
+              </article>
+            </article>
+          </section>
+        </article>
+      </section>
+      <footer class="resume-page__footer social-buttons">
+        <a class="social-buttons__button" href="https://github.com/RobolabGs2" title="GitHub">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="438.549px" height="438.549px" viewBox="0 0 438.549 438.549"
+            style="enable-background:new 0 0 438.549 438.549;" xml:space="preserve">
+            <g>
+              <path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+		C438.536,184.851,428.728,148.168,409.132,114.573z" />
+            </g>
+          </svg></a>
+        <a class="social-buttons__button" href="https://robolabgs2.github.io/test-io/" title="2d proto-game"><svg id="Capa_1"
+            enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                d="m337.29 106.93c1.669 8.041 9.276 13.346 17.64 11.78 8.061-1.681 13.343-9.29 11.78-17.64-1.876-8.995-10.852-13.921-19.06-11.42-7.733 2.465-11.758 9.854-10.36 17.28z" />
+              <path
+                d="m497.027 111.958-53.7-7.388c-14.319-60.455-68.622-104.57-131.327-104.57-74.439 0-135 61.009-135 136 0 43.265 20.61 83.383 54.825 108.635-46.474 41.871-121.068 34.189-157.703-15.488-5.337-7.237-15.796-8.171-22.334-2.038-33.396 31.326-51.788 69.997-51.788 108.891 0 97.047 105.869 176 236 176 129.58 0 235-78.953 235-176 0-42.037-19.598-81.731-55.563-113.251 4.182-4.977 7.985-10.248 11.403-15.776 47.204-.589 85.16-33.125 85.16-80.015 0-8.276-6.701-14.986-14.973-15zm-114.337 325.586c-39.082 28.668-91.177 44.456-146.69 44.456-154.565 0-262.63-122.056-174.703-221.674 56.658 58.535 154.37 54.72 205.555-9.254 5.841-7.3 3.647-18.131-4.593-22.574-34.085-18.381-55.259-53.824-55.259-92.498 0-58.449 47.103-106 105-106 48.175 0 89.985 33.563 101.729 79.81-17.041 8.783-28.729 26.548-28.729 47.004v9.638c0 11.744 5.024 22.333 13.029 29.745-4.304 6.141-9.263 11.821-14.842 16.969-6.896 6.363-6.319 17.448 1.216 23.056 76.095 56.64 75.423 144.74-1.713 201.322zm42.858-260.544c-5.816 0-10.548-4.732-10.548-10.548v-9.638c0-12.302 9.769-22.364 21.957-22.839l43.421 5.974c-6.403 24.378-30.744 37.051-54.83 37.051z" />
+              <path
+                d="m337.725 296.375c-24.634-13.399-52.636-9.407-73.08 10.42-28.121 27.272-81.561 32.875-110.912 33.787-9.754.303-16.621 9.702-13.967 19.077 9.62 33.997 49.886 68.413 108.234 68.413 29.92 0 58.26-6.521 79.799-18.361 23.549-12.945 37.453-31.193 39.148-51.384 3.058-36.404-14.203-53.783-29.222-61.952zm-.672 59.441c-1.714 20.406-37.906 42.255-89.053 42.255-34.136 0-57.162-14.318-69.509-29.073 34.119-3.458 78.924-13.4 107.04-40.667 11.158-10.821 24.603-12.812 37.86-5.603 7.32 3.983 15.488 11.342 13.662 33.088z" />
+            </g>
+          </svg>
+        </a>
+        <a class="social-buttons__button" href="https://robolabgs2.github.io/oddvar/" title="Diploma: Multiagent simulator">
+          <svg height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                d="m89.917 75.305a7.759 7.759 0 0 0 7.75-7.75v-.385h6.143a1.751 1.751 0 0 0 1.75-1.75v-23.54a1.751 1.751 0 0 0 -1.75-1.75h-6.143v-.383a7.759 7.759 0 0 0 -7.75-7.747h-21.167v-6.871a10.75 10.75 0 1 0 -9.5 0v6.871h-21.167a7.759 7.759 0 0 0 -7.75 7.75v.383h-6.143a1.751 1.751 0 0 0 -1.75 1.75v23.537a1.751 1.751 0 0 0 1.75 1.75h6.143v.385a7.759 7.759 0 0 0 7.75 7.75h12.167v5.316h-20.058a7.759 7.759 0 0 0 -7.75 7.75v33.129a1.751 1.751 0 0 0 1.75 1.75h79.616a1.751 1.751 0 0 0 1.75-1.75v-33.129a7.759 7.759 0 0 0 -7.75-7.75h-20.058v-5.316zm12.143-31.675v20.04h-4.393v-20.04zm-45.31-28.13a7.25 7.25 0 1 1 7.25 7.25 7.258 7.258 0 0 1 -7.25-7.25zm6 10.671a9.929 9.929 0 0 0 2.5 0v5.829h-2.5zm-36.81 37.499v-20.04h4.393v20.04zm7.893 3.885v-27.808a4.255 4.255 0 0 1 4.25-4.25h22.888.029s.019 0 .029 0h5.942.029s.019 0 .029 0h22.888a4.255 4.255 0 0 1 4.25 4.25v27.808a4.255 4.255 0 0 1 -4.25 4.25h-13.869c-.016 0-.031-.005-.048-.005s-.032 0-.048.005h-23.9c-.016 0-.031-.005-.048-.005s-.032 0-.048.005h-13.873a4.255 4.255 0 0 1 -4.25-4.25zm50.916 52.195h-41.5v-14.437h41.5zm17.309-31.379v31.379h-13.809v-16.187a1.75 1.75 0 0 0 -1.75-1.75h-45a1.751 1.751 0 0 0 -1.75 1.75v16.187h-13.807v-31.379a4.255 4.255 0 0 1 4.25-4.25h67.616a4.255 4.255 0 0 1 4.25 4.25zm-27.808-7.75h-20.5v-5.316h20.5z" />
+              <path
+                d="m55.251 49.648a7.75 7.75 0 1 0 -7.751 7.752 7.759 7.759 0 0 0 7.751-7.752zm-7.751 4.252a4.25 4.25 0 1 1 4.25-4.25 4.255 4.255 0 0 1 -4.25 4.25z" />
+              <path
+                d="m80.5 57.4a7.75 7.75 0 1 0 -7.75-7.75 7.759 7.759 0 0 0 7.75 7.75zm0-12a4.25 4.25 0 1 1 -4.25 4.25 4.255 4.255 0 0 1 4.25-4.25z" />
+              <path
+                d="m51.875 64.875a1.751 1.751 0 0 0 1.75 1.75h20.75a1.75 1.75 0 0 0 0-3.5h-20.75a1.751 1.751 0 0 0 -1.75 1.75z" />
+              <path
+                d="m94.808 96.121a4.75 4.75 0 1 0 -4.75-4.75 4.756 4.756 0 0 0 4.75 4.75zm0-6a1.25 1.25 0 1 1 -1.25 1.25 1.251 1.251 0 0 1 1.25-1.25z" />
+              <path
+                d="m28.442 91.371a4.75 4.75 0 1 0 4.75-4.75 4.756 4.756 0 0 0 -4.75 4.75zm4.75-1.25a1.25 1.25 0 1 1 -1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z" />
+            </g>
+          </svg>
+        </a>
+        <a class="social-buttons__button" href="https://robolabgs2.github.io/onlineboard/" title="Onlineboard">
+          <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path
+                d="m491.2 296.295c0-13.093 0-268.145 0-281.286 0-8.284-6.716-15-15-15h-440.4c-8.284 0-15 6.716-15 15v281.286c-11.791 2.003-20.8 12.286-20.8 24.64v45.356c0 13.785 11.215 25 25 25h55.692l-34.373 100.86c-3.325 9.761 3.967 19.84 14.2 19.84h64.96c6.42 0 12.12-4.09 14.2-10.16l37.673-110.539h157.295l37.673 110.539c2.08 6.07 7.78 10.16 14.2 10.16h64.96c10.231 0 17.526-10.076 14.2-19.84l-34.373-100.859h55.692c13.785 0 25-11.215 25-25v-45.356c.001-12.354-9.008-22.637-20.799-24.641zm-440.4-266.286h410.4v195.5h-123.2c-13.785 0-25 11.215-25 25v45.426h-262.2zm410.4 225.5v40.426h-118.2v-40.426zm-346.461 226.482h-33.26l30.913-90.699h33.26zm282.522 0-30.913-90.699h33.26l30.913 90.699zm84.739-120.7c-12.609 0-439.359 0-452 0v-35.356h452z" />
+              <path
+                d="m109.95 111.295h292.1c8.284 0 15-6.716 15-15s-6.716-15-15-15h-292.1c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
+              <path
+                d="m288.95 164.009h-179c-8.284 0-15 6.716-15 15s6.716 15 15 15h179c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+            </g>
+          </svg>
+        </a>
+      </footer>
+    </div>
+  </main>
+</body>
+
+</html>
